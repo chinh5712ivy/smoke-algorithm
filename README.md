@@ -10,9 +10,7 @@ Công thức này lấy phương sai của các giá trị Laplacian để cho r
 
 1. **Tính Laplacian tại từng pixel.** Với cấu hình đã thử, $L_i$ bằng tổng độ sáng của bốn pixel lân cận (trên, dưới, trái, phải) trừ bốn lần độ sáng của pixel ở giữa. Nếu pixel giữa có độ sáng $50$ và bốn pixel lân cận có độ sáng $65, 65, 50, 50$ thì:
 
-   $$
-   L_i = 65 + 65 + 50 + 50 - 4 \times 50 = 30
-   $$
+<img width="352" height="27" alt="image" src="https://github.com/user-attachments/assets/b1d06896-0fe3-4257-a1c4-55e9f448040f" />
 
 2. **Tính phương sai.** Lấy trung bình $\bar{L}$ của $N$ giá trị Laplacian hợp lệ. Với mỗi giá trị $L_i$, tính chênh lệch so với $\bar{L}$, bình phương rồi lấy trung bình. Bình phương giúp các giá trị âm và dương đều đóng góp vào điểm.
 
