@@ -4,9 +4,7 @@ Từ khung hình, crop lấy vùng bên trong bbox (ROI), rồi chuyển sang �
 
 Laplacian đo mức thay đổi cường độ giữa mỗi pixel và bốn pixel lân cận. Bài thử dùng OpenCV với `CV_64F`, `ksize=1` và `BORDER_REFLECT_101`. Giá trị Laplacian có dấu được giữ nguyên để tính phương sai:
 
-$$
-S = \operatorname{Var}(\nabla^2 I_{\mathrm{ROI}}) = \frac{1}{N}\sum_{i=1}^{N}(L_i - \bar{L})^2
-$$
+<img width="700" height="120" alt="image" src="https://github.com/user-attachments/assets/4f1eaa61-e423-4861-bb1b-77a86641d7f7" />
 
 Công thức này lấy phương sai của các giá trị Laplacian để cho ra một điểm độ nét $S$ cho vùng ảnh xám bên trong bbox (ROI).
 
